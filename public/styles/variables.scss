@@ -1,0 +1,50 @@
+$main-font: Poppins, sans-serif;
+
+// $main-green: #29ad29;
+$main-green: #29ad29;
+$dark-green: #296642;
+// $main-green: #4ab74a;
+$primary-color: #2ba6cb;
+$black-color: #222;
+$error-color: rgb(160, 18, 18);
+
+$big-screen-width: 1200px;
+$medium-screen-width: 850px;
+$small-screen-width: 450px;
+
+%regular-width {
+  max-width: $big-screen-width;
+  margin: auto;
+  @media (max-width: $big-screen-width+100) {
+    width: 90%;
+  }
+  @media (max-width: $medium-screen-width) {
+    width: 90%;
+  }
+}
+
+.logo__image {
+  width: 50px;
+  height: 50px;
+}
+
+p {
+  font-family: $main-font;
+}
+
+a {
+  font-family: $main-font;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3
+h4,
+h5 {
+  font-family: $main-font;
+}
+
+body {
+  margin: 0px;
+}

@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap');
+@import 'variables';
+
+/* HEADER IMAGE */
+
+.header__image {
+  height: 600px !important;
+
+  @media (max-width: $medium-screen-width) {
+    height: 950px !important;
+  }
+}
+
+.header__image.plant {
+  background: -webkit-linear-gradient(
+    rgba(74, 183, 74, 0.4),
+    rgba(0, 0, 0, 0.4)
+  ),
+  url('/images/forsida.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+.header__image.contact {
+  background: -webkit-linear-gradient(
+    rgba(74, 183, 74, 0.4),
+    rgba(0, 0, 0, 0.4)
+  ),
+  url('/images/contact.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+
+.header__content {
+  @extend %regular-width;
+  padding-top: 78px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  @media (max-width: $medium-screen-width) {
+    flex-direction: column;
+    padding-top: 0px;
+  }
+}
+
+.header__text-box {
+  @media (max-width: $medium-screen-width) {
+    text-align: center;
+  }
+}
+
+.header__title {
+  color: white;
+  font-weight: 600;
+  font-size: 70px;
+  margin-bottom: 0px;
+  @media(max-width: $small-screen-width) {
+    font-size: 50px;
+  }
+}
+
+.header__title-lower {
+  font-size: 60px;
+  color: $main-green;
+  font-weight: 600;
+  margin-top: -20px;
+  @media(max-width: $small-screen-width) {
+    font-size: 40px;
+  }
+}
+
+.header__text {
+  color: white;
+  font-weight: 300;
+  font-size: 26px;
+  width: 70%;
+  margin-top: -40px;
+  @media (max-width: $medium-screen-width) {
+    margin: auto;
+    margin-top: -50px;
+  }
+  @media(max-width: $small-screen-width) {
+    margin-top: -30px
+  }
+}
+
+.contact__wrapper {
+  margin-top: -61px;
+  @media (max-width: $medium-screen-width) {
+    margin: auto;
+    margin-top: 44px;
+  }
+}
+
+.contactbox-container {
+  margin-top: 15px;
+}
+
+.contact__container {
+  width: 300px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 57px;
+
+  @media (max-width: $medium-screen-width) {
+    margin: auto;
+    margin-top: 50px;
+  }
+
+  @media (max-width: $small-screen-width) {
+    width: 65vw;
+  }
+}
+
+.contact__container.bigger {
+  margin-top: -20px;
+}
+
+.right-white-contact {
+  width: 50vw;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 600px;
+  background-color:rgb(255 255 255 / 0.0);
+}
+
+.contact__box-container {
+  max-width: 300px;
+  margin: auto;
+}
+
+
+
+
+.contact__box {
+  text-align: center;
+  margin: auto;
+}
+
+.contact__title {
+  font-size: 20px;
+  color: $black-color;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
+.contact__size-icon {
+  font-size: 30px;
+  color: black;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  color: white;
+  background-color: $main-green;
+  padding: 5px;
+  border-radius: 20px;
+  width: 30px;
+  text-align: center;
+  margin-left: auto;
+}
+
+.contact__size-icon.big {
+  margin-right: 20px;
+  margin-top: 5px;
+  background-color: transparent;
+  color: gray;
+}
+
+.contact__input {
+  border: none;
+  height: 33px;
+  border-radius: 20px;
+  background-color: #eff5f1;
+  width: 80%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 5px;
+  font-size: 13px;
+  font-family: $main-font;
+  max-width: 400px;
+  outline: none !important;
+}
+
+.contact__textarea {
+  height: 120px;
+  padding-top: 10px;
+}
+
+.contact__btn {
+  transition: ease-in 0.20s all;
+  background-color: $main-green;
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 30px;
+  cursor: pointer;
+  padding: 10px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+  margin-top: 12px;
+  margin-bottom: 10px;
+  max-width: 240px;
+}
+
+.contact__btn:hover {
+  transition: ease-in 0.20s all;
+  background-color: lighten($main-green, 20%);
+}
+
+
+.contact__file-upload-container {
+  margin-top: 15px;
+}
+
+.contact__file-upload-label {
+  margin-left: 13px;
+  padding-top: 10px;
+  font-size: 13px;
+}
+
+.contact__file-upload {
+  padding: 10px;
+  width: 80%;
+  padding-bottom: 19px;
+}
+
+.hidden {
+  display: none;
+}
+
